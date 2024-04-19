@@ -15,13 +15,11 @@ import java.util.Scanner;
 public class CheckGuest {
 	public static void main(String[] args) {
 
-		String[] nomeInvitati = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti",
-				"Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic" };
+		String[] nomeInvitati = { "Dua Lipa", "Paris Hilton", "Manuel Agnelli", "J-Ax", "Francesco Totti","Ilary Blasi", "Bebe Vio", "Luis", "Pardis Zarei", "Martina Maccherone", "Rachel Zeilic" };
 
 		System.out.println("Benvenuto alla festa dei Ferragnez !!...");
 		Scanner userName = new Scanner(System.in);
-		System.out.println(
-				"Inserisci il tuo nome e cognome se sei nella lista degli invitati sarai il benvenuto altrimeti!!...");
+		System.out.println("Inserisci il tuo nome e cognome se sei nella lista degli invitati sarai il benvenuto altrimeti!!...");
 		String nomeUtente = userName.nextLine();
 
 //		for (int i = 0; i < nomeInvitati.length; i++) {
@@ -31,18 +29,18 @@ public class CheckGuest {
 //			} else if (i == nomeInvitati.length - 1) {
 //				System.out.println("Purtroppo non sei riconosciuto dagli agenti di sicurezza, la preghiamo di tornare da dove è venuto!!!");
 //			}
-//    	}
+//       	}
 		
-        int i = 0;
+                 int i = 0;
         
-	    while (i < nomeInvitati.length) { 
-	    	if ( nomeUtente.equals(nomeInvitati[i])) {
-				System.out.println(" Sei il benvenuto alla festa dei Ferrgnez ti stavamo aspettando " + nomeUtente);
+	         while (i < nomeInvitati.length) { 
+	    	       if ( nomeUtente.equals(nomeInvitati[i])) {
+		                System.out.println(" Sei il benvenuto alla festa dei Ferrgnez ti stavamo aspettando " + nomeUtente);
 				break;
 			} else if (i == nomeInvitati.length - 1) {
 				System.out.println("Purtroppo non sei riconosciuto dagli agenti di sicurezza, la preghiamo di tornare da dove è venuto!!!");
 			}
-	    	i++;
-	    }
+	    	        i++;
+	        }
 	}
 }
